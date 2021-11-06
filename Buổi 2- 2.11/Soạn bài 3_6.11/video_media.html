@@ -1,0 +1,51 @@
+<!-- Video MP4 -->
+<p><video width="400" controls="controls"> 
+    <source src="https://james.codegym.vn/.../mov_bbb.mp4" type="video/mp4" 
+    /> Your browser does not support HTML5 video. 
+    </video>
+</p>
+
+    <!-- 
+    MP4 (type=”video/mp4″)
+    WebM (type=”video/webm”)
+    Ogg (type=”video/ogg”) 
+    -->
+    
+<!-- -------------------------------------------------------------------- -->
+<!-- Audio file-->
+
+<p><audio controls="controls"> 
+    <source src="https://james.codegym.vn/.../horse.mp3" type="audio/mpeg" 
+    /> Your browser does not support the audio element. 
+    </audio>
+</p>
+
+    <!-- 
+    MP3 (type=”audio/mpeg”)
+    Ogg (type=”audio/ogg”) 
+    Wav (type=”audio/wab”) 
+    -->
+
+<!-- -------------------------------------------------------------------- -->
+<!-- Youtube Video -->
+
+<!-- Dùng thẻ <iframe> để chèn video từ youtube
+=> scr = "https://www.youtube.com/embed/" + [mã link video] -->
+<!DOCTYPE html>
+<html>
+
+<body><iframe width="420" height="345" 
+    src="https://www.youtube.com/embed/BZpdufBafks?playlist=BZpdufBafks&loop=1">
+</iframe>
+</body>
+
+</html>
+
+                                        <!-- Note: -->
+<!-- controls=0 => không có thanh điều khiển cho video:
+=> [mã link video] + "?" + "controls=0" => Không hiển thị thanh điều khiển. -->
+
+                                        <!-- Note: -->
+<!-- loop=1 => lặp lại mãi mãi. Ví dụ:
+src="https://www.youtube.com/embed/BZpdufBafks?playlist=BZpdufBafks&loop=1">
+=> [mã link video] + "?" + playlist=[mã link video] + "&loop=1" -->

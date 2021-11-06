@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Meet Mr. Bob</h2>
+<img src="http://bob.codegym.vn/assets/images/Codegym-bob-RIGHTxWH200.png"
+alt="Mr. Bob" style="height:100px; ">
+
+</body>
+<br>
+
+<p>Nếu trình duyệt không tìm thấy hình ảnh, 
+    nó sẽ hiển thị giá trị của thuộc tính <b>alt</b> :</p>
+    
+    <img src="perfect-girl.gif" alt="Perfect girl not found" 
+    style="width:128px;height:128px;">
+<br>
+<!-- -------------------------------------------------------------------- -->
+
+<button>Click Me</button>
+<br>
+<div>Click Me</div>
+<!-- div – viết tắt của division – 
+là thẻ được dùng để nhóm nhiều phần tử HTML lại với nhau -->
+<br>
+<!-- -------------------------------------------------------------------- -->
+
+<p><abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<!-- viết tắt một cụm từ nào đó trong html -->
+<br>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Cỡ ảnh – Chiều rộng và chiều cao -->
+<div>
+
+    <img src="http://bob.codegym.vn/assets/images/Codegym-bob-RIGHTxWH200.png" 
+    alt="HTML5 Icon" style="width:128px;height:128px;" float="left">
+    <img src="http://bob.codegym.vn/assets/images/Codegym-bob-RIGHTxWH200.png" 
+    alt="HTML5 Icon" width="128" height="128" float="right"> 
+    </div>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Ảnh động -->
+    <img src="https://pixelsbyumair.files.wordpress.com/2014/12/cssgif.gif" 
+    alt="Computer Man" style="width:250px;height:200px;">
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Chen link - Hyperlink <a> </a> -->
+<div>
+    <a href="http://bob.codegym.vn/home" target="_blank">
+        <!-- target ?????????? -->
+        <img src="http://bob.codegym.vn/assets/images/Codegym-bob-RIGHTxWH200.png" 
+        alt="Bob.Codegym.vn" style="width:142px;height:142px;border:0;">
+        </a>
+</div>
+<br>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Đặt vị trí cho ảnh -->
+<p><img src="http://bob.codegym.vn/assets/images/Codegym-bob-RIGHTxWH200.png" 
+    alt="Smiley face" style="float:right; width:42px; height:42px;">
+    The image will float to the right of the text.</p>
+    <br/>
+    <p><img src="http://bob.codegym.vn/assets/images/Codegym-bob-RIGHTxWH200.png" 
+    alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Bản đồ ảnh -->
+<!-- Khai báo usemap trong thẻ image 
+    => dùng thẻ <map> và phần tử thẻ <area> -->
+    <body style="background-color:#272780;">
+
+        <img src="http://bob.codegym.vn/assets/images/Codegym-bob-xh100.png" 
+        alt="Codegym map" usemap="#codegymmap" style="width:360px;height:126px;">
+        
+        <map name="codegymmap">
+          <area shape="rect" coords="0,0,262,126" alt="Codegym" 
+          href="http://codegym.vn"   target="_blank">
+          <area shape="circle" coords="300,58,38" alt="Codegym Bob" 
+          href="http://bob.codegym.vn"   target="_blank">
+        </map>
+        
+        </body>
+<br>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Các dạng chèn link: -->
+<a href="course">Các khóa học</a>
+
+<br>
+<p>You can change the default colors of links</p>
+<a href="html_images.php" target="_blank" >HTML Images
+    <style>
+        a:link    {color:green; background-color:transparent; text-decoration:underline}
+        a:visited {color:pink; background-color:transparent; text-decoration:none}
+        a:hover   {color:red; background-color:transparent; text-decoration:underline}
+        a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+        </style>
+</a>
+<br>
+<a href="http://bob.codegym.vn/lessons/" target="_top">Codegym's lessons: target="_top"</a>
+<!-- ???? Ta có thể dùng target=”_top” để mở liên kết trong tab mới khi đường dẫn đặt trong một frame: -->
+<br>
+<a href="http://bob.codegym.vn/lessons/" target="_blank" >HTML Images </a>
+<br>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Chèn link vào ảnh: -->
+<a href="http://bob.codegym.vn/home" target="_blank">
+    <img src="http://bob.codegym.vn/assets/images/Codegym-bob-xh100.png" 
+    style="border:0;">
+  </a>
+<br>
+
+</html>
+<!-- -------------------------------------------------------------------- -->
+
+                                        <!-- Tóm tắt -->
+<!--Dùng thẻ <img> để định nghĩa một hình ảnh
+Dùng thuộc tính src để định nghĩa URL của hình ảnh
+Dùng thuộc tính alt để định nghĩa dòng chữ thay thế cho ảnh khi ảnh không hiển thị được
+Dùng thuộc tính width và height để định nghĩa kích thước của ảnh
+Dùng thuộc tính CSS width and height để chắc chắn định nghĩa kích thước ảnh (không bị các thuộc tính CSS khác ghi đè)
+Dùng thuộc tính CSS float để xếp vị trí ảnh
+Dùng thẻ <map> để định nghĩa một bản-đồ-ảnh(image-map)
+Dùng thẻ <area> để định nghĩa các vùng có thể click bản-đồ-ảnh
+Dùng thuộc tính usemap của thẻ <img> để trỏ ảnh đến thẻ <map> tương ứng -->

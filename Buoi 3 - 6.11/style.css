@@ -1,0 +1,25 @@
+ br {
+    display: block;
+    margin: 10px 0;
+ }
+
+ h1 {
+   font-family: 'Segoe UI';
+ }
+
+ h2 {
+  font-family: 'Segoe UI';
+  color: green;
+}
+
+ul{
+  font-family: sans-serif;
+}
+
+p{
+  font-family: sans-serif;
+}
+
+
+
+ 

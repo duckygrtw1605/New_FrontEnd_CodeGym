@@ -1,0 +1,79 @@
+<!-- Thứ tự: -->
+<!-- thẻ<ol> tạo danh sách có thứ tự (ol + li)-->
+
+    <ol start="1">
+        <li>Nguyễn Văn A</li>
+        <li>Nguyễn Văn B</li>
+        <li>Nguyễn Văn C</li>
+    </ol>
+    
+<!-- Thuộc tính type của <ol> gán bằng 1, a, A, i để thiết lập một số kiểu đánh số:
+    
+        a dùng chữ thường để đánh chỉ số
+        A chữ in của bảng chữ cái (bắt đầu từ A) để đánh chỉ số
+        i đánh theo số la mã thường
+        I đánh theo số la mã hoa
+        1 kiểu mặc định (dùng số 1,2, ...)
+        Thuộc tính start của <ol> để thiết lập giá trị bắt đầu đánh số -->
+    
+    <ol type="i" start="3">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>C#</li>
+    </ol>
+<!-- -------------------------------------------------------------------- -->
+
+<!-- thẻ<ul> tạo danh sách không có thứ tự  (ul + li)-->
+    <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>C#</li>
+    </ul>
+
+<!-- 
+disc => (Mặc định) Các biểu tượng là hình tròn màu đen
+circle => Các biểu tượng là hình tròn rỗng
+square => Các biểu tượng là hình vuông
+none => Không hiển thị các biểu tượng -->
+<!-- -------------------------------------------------------------------- -->
+
+<!-- Danh sách miêu tả -->
+<!-- => Là danh sách các thuật ngữ cùng với miêu tả của chúng.  -->
+
+<!-- Thẻ <dl> => <dt> => <dd> -->
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+
+<!-- List in list: -->
+  <ul>
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+<!-- -------------------------------------------------------------------- -->
+<!-- Tóm tắt -->
+
+<!-- Dùng thẻ <ul> để định nghĩa một danh sách không xếp thứ tự
+Dùng thuộc tính CSS list-style-type để định nghĩa biểu tượng cho các phần tử trong danh sách
+Dùng thẻ <ol> để định nghĩa một danh sách xếp thứ tự
+Dùng thuộc tính type để định nghĩa kiểu đánh thứ tự
+Dùng thẻ <li> để định nghĩa một phần tử  trong danh sách
+Dùng thẻ <dl> để định nghĩa một danh sách miêu tả
+Dùng thẻ <dt> để định nghĩa một thuật ngữ
+Dùng thẻ <dd> để miêu tả thuật ngữ ngay phía trên nó trong danh sách miêu tả
+Có thể lồng các danh sách bên trong các danh sách
+Các phần tử trong danh sách có thể chứa các thành phần HTML khác
+Dùng thuộc tính CSS float:left hoặc display:inline để hiển thị danh sách nằm ngang -->
+
+
