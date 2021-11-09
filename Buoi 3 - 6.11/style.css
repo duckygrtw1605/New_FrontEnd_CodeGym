@@ -1,15 +1,15 @@
- br {
-    display: block;
-    margin: 10px 0;
- }
-
- h1 {
+h1 {
    font-family: 'Segoe UI';
  }
 
  h2 {
   font-family: 'Segoe UI';
-  color: green;
+  color: #00A19D;
+}
+
+h1{
+  font-family: 'Segoe UI';
+  color: #E05D5D;
 }
 
 ul{
