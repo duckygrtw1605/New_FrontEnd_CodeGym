@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat ID Registration</title>
+</head>
+<body style="background-color: #142F43;">
+    <h1>CAT CITY - ID REGISTRATION</h1>
+    <img src="C:\Users\nga.huynhthien\Downloads\cat play game.jpg" alt="cat image"
+    width="180px" height="180px">
+
+    <!-- Personal Information: -->
+    <h2><u>Personal Information</u></h2>
+
+    <!-- Name, Age, Address + TEXT type-->
+    <form action="">
+        <b>1. Name: </b><input type="text", name="name"> <br><br>
+        <b>2. Age: </b><input type="number", name="name"><br><br>
+        <b>3. Address: </b><input type="text", name="name"><br><br>
+    <!-- Gender  + RADIO type-->
+        <b>4. Gender: </b><br><br>
+        <input type="radio", name="gender" value="male">Male<br><br>
+        <input type="radio", name="gender" value="female">Female<br><br>
+        <input type="radio", name="gender" value="non-binary">Non-binary<br><br>
+    <!-- Breed - DROP-DOWN LIST type-->
+        <b>5. Breed: </b>
+        <select name="cat-breed">
+            <option value="Persian">Persian</option>
+            <option value="Maine">Maine</option>
+            <option value="Bengal">Bengal</option>
+            <option value="Other">Other</option>
+        </select>
+        <br></br>
+    <!-- Allergy - RADIO & CHECKBOX type-->
+        <b>6. Allergy: </b><br><br>
+        <input type="radio", name="allergy", value="yes">Yes<br><br>
+        <input type="radio", name="allergy", value="no">No<br><br>
+
+        <b>6.1. If your cat has allergy, please tick one of the boxes below</b><br>
+        <input type="checkbox", name="allergy-type", value="diary">Dairy
+        <input type="checkbox", name="allergy-type", value="beans">Bean(s)
+        <input type="checkbox", name="allergy-type", value="specific-chemical">Specific chemical(s)
+        <input type="checkbox", name="allergy-type", value="other">Other
+        <br></br>
+    <!-- Other information- TEXTAREA type-->
+        <b>7. Other Information: </b><br>
+        <textarea name="other-information" style="width: 580px; height:180px"> </textarea>
+        <br><br>
+    <!-- Reset & Submit- RESET & SUBMIT type-->
+        <input type="reset", value="Reset ALL Information">
+        <input type="submit", value="Submit">
+    </form>
+
+</body>
+</html>

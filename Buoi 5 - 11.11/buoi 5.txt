@@ -1,0 +1,4 @@
+Action: gửi dữ liệu sau khi submit data => chuyển hướng đến link trong action
+Radio: có value để define giá trị được chọn
+Textarea: input thong tin tren nhieu dong
+Mỗi thẻ đều có name
