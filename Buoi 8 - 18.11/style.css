@@ -1,0 +1,47 @@
+body {
+  background-color:#FFF8E5;
+  padding-left: 20px;
+}
+
+h1 {
+   font-family: 'Segoe UI';
+ }
+
+ h2 {
+  font-family: 'Segoe UI';
+  color: #00A19D;
+}
+
+h1{
+  font-family: 'Segoe UI';
+  color: #E05D5D;
+}
+
+ul{
+  font-family: sans-serif;
+}
+ul > li {
+  padding: 5px 0px 5px;
+}
+
+p{
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+table, th, td{
+  border: dashed #00A19D;
+  border-collapse: collapse;
+
+}
+
+td, th {
+  padding: 10px;
+}
+
+
+ 
