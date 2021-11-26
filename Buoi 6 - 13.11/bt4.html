@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bt4.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+</head>
+<body>
+    <header>
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+        <hr>
+    </header>
+
+    <form>
+        <div id="adjust-box">
+            <label>What is your age range?</label>
+            <select>
+                <option>18 - 24</option>
+                <option>25 - 34</option>
+                <option>35 - 50</option>
+                <option>50+</option>
+            </select>
+        </div>
+
+        <div>
+            <label>What is your yearly income range?</label>
+            <select>
+                <option>$0 - $25,000</option>
+                <option>$25,000 - $50,000</option>
+                <option>$50,001 - $100,000</option>
+                <option>Above $100,000</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Gender identity</label>
+            <div class="space-down">
+                <input type="radio" name="gender-identity" value="male">Male
+            </div>
+            <div class="space-down">
+                <input type="radio" name="gender-identity" value="female">Female
+            </div>
+            <div class="space-down">
+                <input type="radio" name="gender-identity" value="non-binary">Non-binary
+            </div>
+            <div class="space-down">
+                <input type="radio" name="gender-identity" value="other">Other
+            </div>
+             
+            <div>
+                <input type="text" name="gender-section-other">
+            </div>
+        </div>
+        
+
+        <div>
+            <label>Which of the following products have your purchased in the last 2 months. Please check all that apply.</label>
+            <div class="space-down">
+                <input type="checkbox" name="purchased-product" value="product-1"> Product 1
+            </div>
+            <div class="space-down">
+                <input type="checkbox" name="purchased-product" value="product-2"> Product 2
+            </div>
+            <div id="space-down-specific">
+                <input type="checkbox" name="purchased-product" value="product-3"> Product 3
+            </div>
+        </div>
+
+        <div>
+            <label>How often would you use our new product?</label>
+            <div class="space-down">
+                <input type="radio" name="product-use-frequency" value="daily">Daily
+            </div>
+            <div class="space-down">
+                <input type="radio" name="product-use-frequency" value="weekly">Weekly
+            </div>
+        </div>
+        
+        <div>
+            <label>What would you pay for the new product?</label>
+            $ <div id="dollar-box"><input type="text" name="dollar"></div> .
+            <div id="cent-box"><input type="text" name="cent"></div>
+        </div>
+
+        <div>
+            <label>What feature you would like to see in the future?</label>
+            <textarea></textarea>
+        </div>
+
+        <div>
+            <label>Please rate your level of agreement with the following statements</label>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Agree</th>
+                    <th>Strongly Agree</th>
+                </tr>
+                <tr>
+                    <td class="header-table">Our products are priced fairly</td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="SD-1">
+                        <label>1</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="D-2">
+                        <label>2</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="A-3">
+                        <label>3</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="SA-4">
+                        <label>4</label>
+                    </td>
+                </tr>
+                <!--  -->
+                <tr id="row-color">
+                    <td class="header-table">Our products are high quality</td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="SD-1">
+                        <label>1</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="D-2">
+                        <label>2</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="A-3">
+                        <label>3</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="SA-4">
+                        <label>4</label>
+                    </td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td class="header-table">You would recommend out product to a friend or co-worker</td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="SD-1">
+                        <label>1</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="D-2">
+                        <label>2</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="A-3">
+                        <label>3</label>
+                    </td>
+                    <td class="radio-center-align">
+                        <input type="radio" name="rating" value="SA-4">
+                        <label>4</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div>
+            <button>Submit</button>
+        </div>
+
+    </form>
+</body>
+</html>

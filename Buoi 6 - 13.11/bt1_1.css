@@ -1,0 +1,47 @@
+.layout {
+    width: 50%;
+    background-color: cornsilk;
+    margin-left: -100px;
+    padding: 5px;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 300px;
+    margin-top: -43px;
+}
+
+.checkbox {
+    padding-left: 300px;
+    padding-bottom: 30px;
+    margin-top: -43px;
+    color: darkred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2 {
+    color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row-reverse;
+    padding-right: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    padding-left: 180px;
+    color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+

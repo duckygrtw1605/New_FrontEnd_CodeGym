@@ -1,0 +1,12 @@
+form > div {
+    padding: 1%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input + label {
+    display: inline;
+}

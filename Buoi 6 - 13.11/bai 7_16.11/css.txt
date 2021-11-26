@@ -1,0 +1,67 @@
+Đè kiểu
+Khi có nhiều khai báo CSS cho cùng một thẻ HTML thì các khai báo này sẽ tuân thủ theo độ ưu tiên như sau:
+
+Inline style
+External và Internal Style
+Kiểu mặc định của trình duyệt
+Có nghĩa là các khai báo trực tiếp trên thẻ HTML (Inline style) sẽ có độ ưu tiên cao nhất, sau đó là đến các khai báo External Style và Internal Style, và cuối cùng, nếu không có khai báo nào cả thì các kiểu mặc định của trình duyệt sẽ được sử dụng.
+
+Chẳng hạn, trong ví dụ sau thì màu của thẻ <h1> sẽ là đỏ.
+
+<head>
+    <style>
+    h1{
+      color:green;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color:red;">This is a heading</h1>
+</body>
+
+----------
+                                --- Kiểu đường viền ---
+Thuộc tính border-style chỉ định loại\kiểu đường viền sẽ hiển thị. Các giá trị cho phép đối với thuộc tính này:
+
+dotted – đường viền là các điểm (dấu chấm)
+dashed – đường viền là các nét đứt
+solid – đường viền là nét liền mảnh
+double – đường viền là nét đôi
+groove – đường viền 3D có xẻ rãnh. Hiệu ứng phụ thuộc vào màu viền
+ridge – đường viền 3D tròn nổi. Hiệu ứng phụ thuộc vào màu viền
+inset – đường viền 3D khung chìm. Hiệu ứng phụ thuộc vào màu viền
+outset – đường viền 3D khung nổi. Hiệu ứng phụ thuộc vào màu viền
+none – không có đường viền
+hidden – đường viền ẩn
+Thuộc tính border-style có thể có từ một đến bốn giá trị (thiết lập cho 4 đường viền trên (top), phải (right), dưới (bottom), và trái (left)).
+
+-------
+body {
+    background-image: url("https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2021/05/01164843/a1.jpeg"); 
+}
+
+- Hình nền lặp theo chiều ngang:
+body {
+    color: #ffffff;
+    background-image: url("https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2021/05/01170243/a2-1.png");
+    background-repeat: repeat-x;
+}
+- Không lặp:
+body {
+    color:#ffffff;
+    background-image: url("https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2021/05/01170243/a2-1.png");
+    background-repeat: no-repeat;
+}
+
+- Khi sử dụng thuộc tính rút gọn, thứ tự của các giá trị tương ứng với các thuộc tính là:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+------
+ul {
+    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+}

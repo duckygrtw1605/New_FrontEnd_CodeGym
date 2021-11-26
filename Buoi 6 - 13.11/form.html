@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Tạo form cơ bản</title>
+</head>
+<body style="background-color: #142F43;">
+    <h1>ORDER FORM</h1>
+    <h2>What would you like to buy?</h2>
+
+    <select name="food" style="width: 250px; height: 30px">
+        <option value="fried-chicken">Fried chicken</option>
+        <option value="french-fries">French fries</option>
+        <option value="mexican-burito">Mexican burito</option>
+    </select>
+    <br>
+
+    <h2>How many would you like to order?</h2>
+    <input type="radio", name="order-numbers" value="1 - $10"><label>1 - $10</label><br><br>
+    <input type="radio", name="order-numbers" value="2 - $20"><label>2 - $20</label><br><br>
+    <input type="radio", name="order-numbers" value="3 - $20"><label>3 - $20</label><br><br>
+
+    <h2>Receiver Information</h2>
+    <input type="text" name="first-name" placeholder="Input your first name" required>
+    <input type="text" name="last-name" placeholder="Input your last name" required>
+
+    <h2>Email</h2>
+    <input type="text" name="email" placeholder="example@gmail.com">
+
+    <h2>Phone Number</h2>
+    <input type="text" name="phone-number">
+    <!-- <p>-</p>
+    <input type="number" name="phone-number">
+    <p>-</p>
+    <input type="number" name="phone-number"> -->
+    
+    <br><br><br>
+    <input type="submit" value="Submit">
+
+
+</body>
+</html>

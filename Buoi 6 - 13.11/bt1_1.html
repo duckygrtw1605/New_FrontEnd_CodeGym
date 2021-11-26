@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bt1_1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form đơn giản</title>
+</head>
+<body>
+<div class="layout">
+    <form>
+        <div><h1>SỞ THÍCH CỦA BẠN</h1></div>
+    
+
+                <!-- Họ và tên  -->
+            <div><h2>Họ và tên:</h2></div>
+            <div class="line"><input type="text" name="full-name" placeholder="Nguyen van A"></div>
+                
+            <!-- Email  -->
+            <div><h2>Email:</h2></div>
+            <div class="line"><input type="text" name="email" placeholder="example@gmail.com"></div>
+            
+            <!-- Sở thích  -->
+            <div><h2>Sở thích:</h2></div>
+    
+            <div class="checkbox">
+                <div>
+                    <label><input type="checkbox" name="so-thich" value="the-thao"> Thể thao</label>
+                    <label style="padding-left: 5px;"><input type="checkbox" name="so-thich" value="du-lich"> Du lịch</label>
+                    <label style="padding-left: 23px;"><input type="checkbox" name="so-thich" value="doc-sach"> Đọc sách</label>
+                </div>
+    
+                <div>
+                    <label><input type="checkbox" name="so-thich" value="luot-web"> Lướt web</label>
+                    <label><input type="checkbox" name="so-thich" value="choi-game"> Chơi game</label>
+                    <label><input type="checkbox" name="so-thich" value="dien-anh"> Điện ảnh</label>
+                </div>
+                    
+                <div>
+                    <label><input type="checkbox" name="so-thich" value="am-nhac" > Âm nhạc</label>
+                </div>
+            </div>
+                
+            
+    
+            
+    
+        <!-- Button -->
+        <div class="button">
+            <div>
+                <button>Gửi thông tin</button>
+            </div>
+            <div style="margin-left: -200px;">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </div>
+        
+      
+    </form>
+</div>
+    
+</body>
+</html>

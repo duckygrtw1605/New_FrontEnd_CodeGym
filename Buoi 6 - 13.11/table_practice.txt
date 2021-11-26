@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style_table_practice.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+</head>
+<body>
+    <table>
+
+        <!-- Main headers: -->
+        <tr>
+            <th rowspan="2">Date</th>
+            <th colspan="2">Activities</th>
+        </tr>
+        <!-- Seperate morning/evening Sections: -->
+        <tr>
+            <td style="text-align: center;"><b>Morning: 6AM - 6PM</b></td>
+            <td style="text-align: center;"><b>Evening: 6PM - 12AM</b></td>
+        </tr>
+        <!-- Information: -->
+        <tr>
+            <td>Monday</td>
+            <td>Go jogging: 7am</td>
+            <td>Cooking dinner: 7pm</td>
+        </tr>
+
+        <tr class="expand">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="expand">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="expand">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="expand">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        
+
+
+    </table>
+</body>
+</html>
