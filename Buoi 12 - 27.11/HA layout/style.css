@@ -1,0 +1,96 @@
+img {
+    width: 100%;
+
+}
+
+body > div {
+    float: left;
+    margin: 2%;
+    width: 16%;
+
+
+/* Body div => all div elements
+Body > div => only the divs closest to the body */
+}
+
+body > div:hover {
+    background-color: coral;
+    transition: 0.5s;
+    opacity: 1;
+
+  
+}
+
+input:focus {
+    background-color: fuchsia;
+}
+
+input {
+    display: inline;
+    padding-right:30%;
+    width: 20%;
+    margin-left:42%;
+    margin-bottom:-20%;
+
+
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color:forestgreen;
+  }
+
+p:first-child {
+    /* first child: apply for the first element of another element */
+  color: blue;
+} 
+
+h1 {
+    text-align: center;
+}
+
+h1 + div {
+    /* apply for 1 and ONLY div below h1 element */
+    background-color: blanchedalmond;
+}
+
+h1 ~ div {
+    /* apply for ALL div below h1 */
+    background-color: blanchedalmond;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) and (min-width:700px) {
+    body {
+        background-color: aqua;
+    }
+
+    body > div {
+        opacity: 1.0;
+        width: 28%;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:699px) {
+    body {
+        background-color: aqua;
+    }
+
+    body > div {
+        opacity: 1.0;
+        width: 45%;
+    }
+
+    p {
+        font-size: 24px;
+    }
+    
+    
+}
