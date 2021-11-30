@@ -1,0 +1,244 @@
+/* #4A154B: dark - purple (hover)*/
+/* #611f69: purple */
+/* #1D1D1D: black */
+@font-face {
+    font-family: Slack-Larsseit;
+    src: url(./larsseit/Larsseit-Bold.otf);
+}
+
+@font-face {
+    font-family: Slack-Larsseit-Light;
+    src: url(./larsseit/Larsseit-Light.otf);
+}
+
+body {
+    margin-top: 10px;
+    background-color: #f6efe8;
+}
+header {
+    font-family: Slack-Larsseit;
+    font-weight: bold;
+    width: 100%;
+    height: 130px;
+}
+li > ul {
+    display: none;
+}
+
+#left-header {
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#left-header img {
+    float: left;
+    width: 100px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+#left-header li {
+    margin-top: 5px;
+    float: left;
+    display: inline;
+    padding-left: 30px;
+    color: #1D1D1D;
+
+}
+/* right */
+#right-header {
+    float: right;
+    margin-right: 20px;
+
+}
+
+#right-header a {
+    margin-top: 5px;
+    float: right;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #1D1D1D;
+}
+
+#right-header button {
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+    padding: 12px 16px;
+    border: 1.5px solid #611f69;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#right-header button:nth-last-child(2) {
+    margin-top: -6px;
+    color: #611f69;
+    background-color: transparent;
+    text-align: center;
+}
+
+#right-header button:nth-last-child(3) {
+    margin-top: -6px;
+    color: white;
+    background-color: #611f69;
+    text-align: center;
+}
+/* section */
+#introduction-section {
+    clear: both;
+    margin-bottom:0;
+}
+
+#introduction-section div {
+    margin-left: 40px;
+    float: left;
+    
+}
+
+#introduction-section img {
+    width: 600px;
+    height: 345px;
+    margin-top: -25px;
+    margin-left: 70px;
+
+}
+
+#introduction-section h1 {
+    line-height: 65px;
+    font-family: Slack-Larsseit;
+    font-weight: bold;
+    color: #1D1D1D;
+    letter-spacing: 0;
+    font-size: 60px;
+    width: 450px;
+    margin:0;
+}
+
+#introduction-section p {
+    font-family: Slack-Larsseit-Light;
+    color: #1D1D1D;
+    font-size: 20px;
+    width: 480px;
+    margin-bottom: 35px;
+}
+
+#introduction-section button:nth-last-child(2) {
+    border: 1.5px solid #611f69;
+    border-radius: 5px;
+    padding: 18px 40px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #611f69;
+    text-align: center;
+    margin:0;
+}
+
+#introduction-section button:nth-last-child(1) {
+    background-color: #4285f4;
+    color: white;
+    border: 1.5px solid #4285f4;
+    border-radius: 5px;
+    padding: 18px 28px;
+    font-weight: bold;
+    font-size: 14px;
+    margin:0 0 0 5px;
+}
+
+#brand-section {
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+#brand-section img:nth-last-child(7) {
+    width: 69px;
+    height: 30px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    
+}
+
+#brand-section img:nth-last-child(6) {
+    width: 137px;
+    height: 68px;
+    padding-right: 60px;
+    margin-bottom: -8px;
+
+
+}
+
+#brand-section img:nth-last-child(5) {
+    width: 104.5px;
+    height: 30px;
+    padding-right: 70px;
+    margin-bottom: 10px;
+
+}
+
+#brand-section img:nth-last-child(4) {
+    width: 170px;
+    height: 43.25px;
+    padding-right: 70px;
+
+}
+
+#brand-section img:nth-last-child(3) {
+    width: 74px;
+    height: 30px;
+    padding-right: 70px;
+    margin-bottom: 5px;
+
+}
+
+#brand-section img:nth-last-child(2) {
+    width: 34.5px;
+    height: 35px;
+    padding-right: 70px;
+
+}
+
+#brand-section img:nth-last-child(1) {
+    width: 135px;
+    height: 30px;
+    padding-bottom: 3px;
+
+}
+
+#video-section {
+    margin: 0 0 0 40px;
+}   
+
+#video-section video {
+    width: 510px;
+    height: 300px;
+}
+
+#video-section div {
+    float: right;
+    margin-right: 180px;
+    margin-top: -10px;
+    width: 450px;
+}
+
+#video-section h2 {
+    font-family: Slack-Larsseit;
+    font-size: 32px;
+    color: #1D1D1D;
+}
+
+#video-section p {
+    font-family: Slack-Larsseit-Light;
+    font-size: 18px;
+    color: #1D1D1D;
+}
+
+#video-section button {
+    border: 1.5px solid #611f69;
+    padding: 18px 40px;
+    color: #611f69;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
