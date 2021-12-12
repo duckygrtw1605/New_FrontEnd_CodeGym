@@ -1,0 +1,430 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./font/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay;
+    src: url(./font/Red_Hat_Display/RedHatDisplay-Light.ttf);
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url(./font/Cormorant/Cormorant-Light.ttf);
+}
+
+@font-face {
+    font-family: Cormorant-Bold;
+    src: url(./font/Cormorant/Cormorant-Medium.ttf);
+}
+
+@font-face {
+    font-family: Archivo;
+    src: url(./font/Archivo/Archivo-Light.ttf);
+}
+
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#fixed-header {
+    position: fixed;
+    color: #c59d5f;
+    background-color: rgba(0, 0, 0, 0.705);
+    font-family: Montserrat;
+    font-size: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 7px;
+}
+
+#second-header {
+    padding-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#logo {
+    width: 151px;
+    height: 53px;
+    padding: 0;
+    margin-left: -20px;
+}
+
+#choices li {
+    display: inline-block;
+    padding-top: 5px;
+    padding-left:0;
+    padding-right: 35px;
+    font-family: Montserrat-Light;
+    font-size: 14px;
+}
+
+#choices a {
+    text-decoration: none;
+}
+
+#choices a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#search-word {
+    display: inline-block;
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    padding-right: 30px;
+
+}
+
+#icons {
+    margin-top: 7px;
+    padding: 0;
+
+}
+
+#search-icon > img {
+    width: 15px;
+    margin-bottom: -3px;
+    padding: 0px;
+}
+
+#search-word > a {
+    text-decoration: none;
+}
+
+#cart-icon > img {
+    width: 20px;
+    margin-bottom: -3px;
+    padding-right: 30px;
+
+}
+
+#menu-icon > img {
+    width: 18px;
+    margin-bottom: -3px;
+
+}
+
+#photo-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 500px;
+}
+
+#first-photo{
+    width: 48.5%;
+}
+
+#second-photo {
+    width: 48.5%;
+}
+article + section {
+    position: relative;
+}
+
+/* introduction */
+#introduction {
+    position: absolute;
+    display: grid;
+    background-color: black;
+    color: white;
+    width: 550px;
+    padding-left: 30px;
+    margin-top: -100px;
+}
+
+#store-name1 {
+    font-family: RedHatDisplay;
+    letter-spacing: 4px;
+    font-size: 16px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+hyphens {
+    letter-spacing: -2px;
+    font-family: RedHatDisplay;
+    font-size: 20px;
+}
+
+#the-lounge {
+    font-family: Cormorant;
+    font-size: 50px;
+    line-height: 12px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+#store-name4 {
+    letter-spacing: 5px;
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-family: Montserrat;
+}
+
+#information {
+    margin-top: 230px;
+    display: flex;
+}
+
+#brief-info {
+    width: 39%;
+    padding-left: 150px;
+}
+
+#information-name1{
+    font-family: RedHatDisplay;
+    letter-spacing: 4px;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+#information-name2{
+    font-family: Cormorant-Bold;
+    font-size: 35px;
+    line-height: 15px;
+}
+
+#brief-info > p {
+    width: 100%;
+    font-family: Archivo;
+    font-size: 16px;
+    line-height: 28px;
+
+}
+#more-info {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat-Light;
+    padding-left: 250px;
+    margin-top: 30px;
+}
+
+#more-info > a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#more-info > a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* exceptional service */
+#service {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 70px 150px 50px;
+    grid-template-areas: 
+    "blank img"
+    "header img"
+    "cont img"
+    "nav img";
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding-left: 150px;
+}
+
+#service-name {
+    width: 500px;
+    grid-area: header;
+    font-size: 35px;
+    padding-right: 0px;
+}
+
+#service-name1 {
+    font-family: RedHatDisplay;
+    letter-spacing: 4px;
+    font-size: 16px;
+    line-height: 0%;
+
+}
+
+#service-name2 {
+    font-family: Cormorant-Bold;
+    font-size: 35px;
+    line-height: 15px;
+}
+
+#service > p {
+    width: 500px;
+    grid-area: cont;
+    font-family: Archivo;
+    font-size: 16px;
+    line-height: 28px;
+    /* margin-top: -40px; */
+}
+
+#meet-the-team {
+    /* margin-top: -30px; */
+    grid-area: nav;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat-Light;
+    
+}
+
+#meet-the-team > a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#meet-the-team > a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+#img-the-team {
+    grid-area: img;
+}
+
+#img-the-team :nth-last-child(1) {
+    padding-left: 15px;
+    width: 45%;
+}
+
+#img-the-team :nth-last-child(2) {
+    width: 45%;
+}
+
+/* footer1 */
+
+#footer1 {
+    display: grid;
+    grid-template-columns: 260px 200px 200px 200px;
+    justify-content: space-evenly;
+}
+
+/* address  */
+#address {
+    width: 200px;
+}
+
+#address > h1 {
+    font-family: Cormorant-Bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+#address > p {
+    font-family: RedHatDisplay;
+    letter-spacing: 2px;
+}
+
+/* working hours */
+
+#working-hours {
+    width: 200px;
+}
+
+#working-hours > h1 {
+    font-family: Cormorant-Bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+#working-hours > ul {
+    list-style: none;
+    padding:0;
+}
+
+#working-hours > ul > li {
+    letter-spacing: 2px;
+    font-family: RedHatDisplay;
+}
+
+/* hair salon */
+
+#hair-salon {
+    width: 200px;
+}
+
+#hair-salon > h1 {
+    font-family: Cormorant-Bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+#hair-salon > ul {
+    list-style: none;
+    padding:0;
+}
+
+#hair-salon > ul > li {
+    letter-spacing: 2px;
+    font-family: RedHatDisplay;
+}
+
+/* shop */
+#shop {
+    width: 200px;
+}
+
+#shop > h1 {
+    font-family: Cormorant-Bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+#shop > ul {
+    list-style: none;
+    padding:0;
+}
+
+#shop > ul > li {
+    letter-spacing: 2px;
+    font-family: RedHatDisplay;
+}
+
+/* footer2 */
+#footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 120px;
+    background-color: #1c1c1c;
+    color: white;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+#footer2 > a > img {
+    width: 170px;
+    padding-right: 450px;
+}
+
+#footer2 > h1 {
+    font-size: 11px;
+    font-family: RedHatDisplay;
+    letter-spacing: 3px;
+    padding-right: 100px;
+}
+
+#footer2 > a:nth-last-child(1) {
+    text-decoration: none;
+    font-family: RedHatDisplay;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
