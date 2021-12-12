@@ -11,10 +11,12 @@
     src: url(./larsseit/Larsseit-Light.otf);
 }
 
-body {
+html, body {
     margin-top: 10px;
     background-color: #f6efe8;
 }
+
+/* header  */
 header {
     font-family: Slack-Larsseit;
     font-weight: bold;
@@ -25,6 +27,7 @@ li > ul {
     display: none;
 }
 
+/* left header  */
 #left-header {
     margin-left: 25px;
     margin-top: 30px;
@@ -45,7 +48,7 @@ li > ul {
     color: #1D1D1D;
 
 }
-/* right */
+/* right header */
 #right-header {
     float: right;
     margin-right: 20px;
@@ -83,7 +86,8 @@ li > ul {
     background-color: #611f69;
     text-align: center;
 }
-/* section */
+
+/* introduction section */
 #introduction-section {
     clear: both;
     margin-bottom:0;
@@ -104,7 +108,6 @@ li > ul {
 }
 
 #introduction-section h1 {
-    line-height: 65px;
     font-family: Slack-Larsseit;
     font-weight: bold;
     color: #1D1D1D;
@@ -122,7 +125,7 @@ li > ul {
     margin-bottom: 35px;
 }
 
-#introduction-section button:nth-last-child(2) {
+#introduction-section button:nth-last-child(3) {
     border: 1.5px solid #611f69;
     border-radius: 5px;
     padding: 18px 40px;
@@ -134,7 +137,7 @@ li > ul {
     margin:0;
 }
 
-#introduction-section button:nth-last-child(1) {
+#introduction-section button:nth-last-child(2) {
     background-color: #4285f4;
     color: white;
     border: 1.5px solid #4285f4;
@@ -145,6 +148,12 @@ li > ul {
     margin:0 0 0 5px;
 }
 
+/* mobile section button */
+#introduction-section button:nth-last-child(1) {
+    display: none;
+}
+
+/* brand section */
 #brand-section {
     margin-left: 50px;
     margin-top: 70px;
@@ -205,6 +214,7 @@ li > ul {
 
 }
 
+/* video section */
 #video-section {
     margin: 0 0 0 40px;
 }   
@@ -242,3 +252,208 @@ li > ul {
     background-color: transparent;
 }
 
+/* Mobile version */
+
+@media screen and (max-width: 450px){
+
+    html, body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    /* header  */
+    ul, li {
+        display: none;
+    }
+
+    header {
+        font-family: Slack-Larsseit;
+        font-weight: bold;
+        width: 100%;
+        height: 80px;
+        margin-left:-25px;
+    }
+    #right-header {
+        display:none;
+    }
+
+    #left-header img {
+        float: left;
+        width: 100px;
+        height: auto;
+    }
+
+    /* introduction selection */
+
+    #introduction-section{
+        margin-left: -25px;
+
+    }
+    #introduction-section h1 {
+        font-family: Slack-Larsseit;
+        color: #1D1D1D;
+        line-height: 45px;
+        font-size: 42px;
+        width: 450px;
+   
+    }
+
+    #introduction-section p {
+        font-family: Slack-Larsseit-Light;
+        line-height: 25px;
+        color: #1D1D1D;
+        font-size: 19px;
+        width: 420px;
+        margin-bottom: 30px;
+    }
+
+    #introduction-section button {
+        display:none;
+    }
+
+    #introduction-section button:nth-last-child(1) {
+        font-family: Slack-Larsseit;
+        letter-spacing: 1px;
+        font-weight: bold;
+        display: block;
+        color: white;
+        background-color: #611f69;
+        padding: 18px 100px;
+        width: 84.5%;
+        border: 1.5px solid #611f69;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    #introduction-section img {
+        width: 90%;
+        height: auto;
+        margin: 35px 0px 0 40px;
+    }
+
+    /* brand selection */
+    #brand-section {
+        float: left;
+        width: 600px;
+        margin-left: 30px;
+        margin-top: 65px;
+        margin-bottom: 80px;
+    }
+    
+    #brand-section img:nth-last-child(7) {
+        width: 69px;
+        height: auto;
+        padding-right: 20px;
+        margin-bottom: 10px;
+        
+    }
+    
+    #brand-section img:nth-last-child(6) {
+        width: 137px;
+        height: auto;
+        padding-right: 20px;    
+    }
+    
+    #brand-section img:nth-last-child(5) {
+        width: 104.5px;
+        height: auto;
+        padding-right: 40px;
+        margin-bottom: 10px;
+    
+    }
+    /* row2-brand */
+    #brand-section img:nth-last-child(4) {
+        width: 170px;
+        height: auto;
+        padding-right: 30px;
+        margin-top: 30px;
+        margin-left: 8px;
+    
+    }
+    
+    #brand-section img:nth-last-child(3) {
+        width: 74px;
+        height: auto;
+        padding-right: 30px;
+        margin-bottom: 5px;
+    
+    }
+    
+    #brand-section img:nth-last-child(2) {
+        width: 34.5px;
+        height: auto;
+        padding-right: 40px;
+    
+    }
+    /* row3-brand  */
+    #brand-section img:nth-last-child(1) {
+        width: 135px;
+        height: auto;
+        padding-bottom: 3px;
+        margin-top: 20px;
+        margin-left: 110px;
+    
+    }
+
+    /* video section  */
+    #video-section {
+        padding: 0;
+        margin: 0;
+    }    
+    
+    #video-section video {
+        margin-left: 15px;
+        margin-right: 32px;
+        padding: 0;
+        width: 94%;
+        height: auto;
+        
+    }
+    
+    #video-section div {
+        float: none;
+        width: 200%;
+        margin-left: -7px;
+        margin-top: -20px;
+        padding: 30px 0 0 0;
+        background-color: white;
+    }
+    
+    #video-section h2 {
+        margin-left: 25px;
+        width: 400px;
+        font-family: Slack-Larsseit;
+        font-size: 25px;
+        color: #1D1D1D;
+    }
+    
+    #video-section p {
+        letter-spacing: 1px;
+        margin-left: 26px;
+        width: 380px;
+        font-family: Slack-Larsseit-Light;
+        font-size: 18px;
+        color: #1D1D1D;
+    }
+    
+    #video-section button {
+        letter-spacing: 1.5px;
+        margin-left: 25px;
+        margin-right: -25px;
+        margin-bottom: 1000px;
+        width: 46.5%;
+        border: 1.5px solid #611f69;
+        padding: 16px 40px;
+        color: #611f69;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+
+
+
+
+}
