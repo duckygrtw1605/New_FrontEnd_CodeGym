@@ -49,6 +49,17 @@ html, body {
     line-height: 7px;
 }
 
+#fixed-header > h2 > a {
+    color: #c59d5f;
+    text-decoration: underline;
+}
+
+#fixed-header > h2 > a:hover {
+    color: white;
+
+}
+
+
 #second-header {
     padding-top: 70px;
     margin-left: 20px;
