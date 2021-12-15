@@ -47,6 +47,8 @@ html, body {
     height: 50px;
     text-align: center;
     line-height: 7px;
+    z-index: 2;
+
 }
 
 #fixed-header > h2 > a {
@@ -160,6 +162,7 @@ article + section {
     width: 550px;
     padding-left: 30px;
     margin-top: -100px;
+    z-index: 1;
 }
 
 #store-name1 {
@@ -191,6 +194,7 @@ hyphens {
     font-family: Montserrat;
 }
 
+/* information  */
 #information {
     margin-top: 230px;
     display: flex;
@@ -230,13 +234,13 @@ hyphens {
 }
 
 #more-info > a {
-    text-decoration: none;
     color: #333333;
 }
 
 #more-info > a:hover {
     text-decoration: underline;
-    color: black;
+    background-color:#1c1c1c;
+    color: white;
 }
 
 /* exceptional service */
@@ -294,13 +298,13 @@ hyphens {
 }
 
 #meet-the-team > a {
-    text-decoration: none;
     color: #333333;
 }
 
 #meet-the-team > a:hover {
     text-decoration: underline;
-    color: black;
+    background-color:#1c1c1c;
+    color: white;
 }
 
 #img-the-team {
@@ -321,7 +325,9 @@ hyphens {
 #footer1 {
     display: grid;
     grid-template-columns: 260px 200px 200px 200px;
+    grid-template-rows: 250px 30px;
     justify-content: space-evenly;
+    
 }
 
 /* address  */
