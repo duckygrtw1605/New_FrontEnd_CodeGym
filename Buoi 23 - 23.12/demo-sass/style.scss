@@ -1,0 +1,50 @@
+$main-color: white; 
+@mixin lesson-style($custom-color) {
+    // ($custom-color) => nhan gia tri mang ten custom-color
+    height: 40%;
+    width: 50%;
+    float: left;
+    // gia tri custom-color la background-color
+    background-color: $custom-color;
+}
+
+
+h1, h2, p {
+    color: $main-color;
+}
+
+.lesson-1 {
+    @include lesson-style(antiquewhite);
+
+    h2 {
+        color: brown;
+    }
+
+    p {
+        color: black;
+    }
+}
+
+.lesson-2 {
+    @include lesson-style(blue);
+
+    h2 {
+        color: chartreuse;
+    }
+
+    p {
+        color: cornsilk;
+    }
+}
+
+.lesson-3 {
+    @include lesson-style(darkgreen);
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: darkturquoise;
+    }
+}
