@@ -604,10 +604,11 @@ button {
 }
 
 .main_form {
+    z-index: 1;
     background: #0c0f38;
     padding: 55px 55px;
     border-radius: 30px;
-    margin-bottom: -58%;
+    margin-bottom: -45%;
 }
 
 .contact .main_form .contactus {
@@ -668,6 +669,7 @@ button {
 /** footer **/
 
 .footer {
+    z-index: auto;
     font-family: Poppins;
     background: #0c0f38;
 }
