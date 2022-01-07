@@ -1,0 +1,527 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./font/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay;
+    src: url(./font/Red_Hat_Display/RedHatDisplay-Light.ttf);
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url(./font/Cormorant/Cormorant-Light.ttf);
+}
+
+@font-face {
+    font-family: Cormorant-Bold;
+    src: url(./font/Cormorant/Cormorant-Medium.ttf);
+}
+
+@font-face {
+    font-family: Cormorant-Bolder;
+    src: url(./font/Cormorant/Cormorant-Bold.ttf);
+}
+
+@font-face {
+    font-family: Archivo;
+    src: url(./font/Archivo/Archivo-Light.ttf);
+}
+
+$text-color: #333333;
+
+// Making underline effect:
+@mixin no-margin-left-middle-underline-effect {
+    position: relative;
+    color: $text-color;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Archivo;
+    font-weight: bold;
+}
+
+@mixin middle-underline-effect {
+    position: relative;
+    color: $text-color;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Archivo;
+    font-weight: bold;
+    margin-left: 300px;
+}
+
+@mixin before-middle-underline-effect {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid $text-color;
+    margin-bottom: -10px;
+}
+
+@mixin hover-before-middle-underline-effect {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+// End making underline effect
+
+// Titles
+@mixin lounge-hair-studio {
+    font-family: Cormorant-Bold;
+    font-size: 22px;
+}
+
+@mixin lounge-hair-studio-BOLDER {
+    font-family: Cormorant-Bold;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+@mixin intro-after-lounge-hair-studio {
+    font-family: Cormorant-Bolder;
+    font-weight: 100;
+    font-size: 35px;
+    letter-spacing: -1px;
+    width: 500px;
+}
+
+// End titles
+
+// Empty spaces 
+@mixin empty-space-100 {
+    height: 100px;
+}
+
+@mixin empty-space-30 {
+    height: 30px;
+}
+
+// End empty spaces
+
+html,
+body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+// Headers
+#fixed-header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.705);
+    padding-top: 14px;
+
+    h2 {
+        color: #c59d5f;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-align: center;
+        line-height: 7px;
+
+    }
+
+
+    a {
+        color: #c59d5f;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+}
+
+
+#second-header {
+    padding-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    #logo {
+        width: 151px;
+        height: 53px;
+        padding: 0;
+        margin-left: -20px;
+    }
+
+    #choices {
+        margin-top: 8px;
+
+        li {
+            display: inline-block;
+            padding-top: 5px;
+            padding-left: 0;
+            padding-right: 35px;
+            font-family: Montserrat-Light;
+            font-size: 14px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+    }
+
+    #icons {
+        margin-top: 7px;
+        padding: 0;
+
+        div {
+            display: inline-block;
+            margin-top: 4px;
+        }
+
+    }
+
+    #search-word {
+        display: inline-block;
+        font-family: Montserrat-Light;
+        font-size: 14px;
+        padding-right: 30px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+    }
+
+    #search-icon {
+        img {
+            width: 15px;
+        }
+    }
+
+    #cart-icon {
+        img {
+            width: 20px;
+            margin-right: 35px;
+            margin-bottom: 4px;
+
+        }
+    }
+
+    #menu-icon {
+        img {
+            width: 18px;
+            margin-bottom: 2px;
+            margin-right: 5px;
+
+        }
+    }
+}
+
+// Book now!
+.book-now-container {
+    margin: 100px 170px;
+
+    h2 {
+        @include lounge-hair-studio();
+    }
+
+    h1 {
+        @include intro-after-lounge-hair-studio();
+    }
+
+    #fresha-logo {
+        display: block;
+        width: 300px;
+        height: 60px;
+        margin: 20px 0;
+    }
+
+    #app-store-logo {
+        width: 150px;
+        height: 45px;
+    }
+
+    #google-play-logo {
+        width: 150px;
+        height: 45px;
+        margin-left: 100px;
+    }
+
+
+    #book-now-booking {
+        @include middle-underline-effect();
+    }
+
+    #book-now-booking:before {
+        @include before-middle-underline-effect();
+    }
+
+    #book-now-booking:hover:before {
+        @include hover-before-middle-underline-effect();
+    }
+
+
+
+}
+
+// Guideline
+.guideline-container {
+    margin: 0px 140px;
+
+    #empty-space {
+        height: 30px;
+    }
+
+    .guideline-content {
+        padding: 0px 20px;
+
+        h2 {
+            @include lounge-hair-studio-BOLDER();
+        }
+    }
+
+    .guideline-photo {
+        padding: 0px 20px;
+        margin: 0;
+    }
+
+    li {
+        font-family: Archivo;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+.booking-engine {
+    text-align: center;
+
+    #empty-space {
+        @include empty-space-100();
+    }
+
+    h2 {
+        @include lounge-hair-studio-BOLDER();
+        letter-spacing: 3px;
+    }
+
+    #fresha-help-page {
+        @include no-margin-left-middle-underline-effect();
+    }
+
+    #fresha-help-page:before {
+        @include before-middle-underline-effect();
+    }
+
+    #fresha-help-page:hover:before {
+        @include hover-before-middle-underline-effect();
+    }
+
+
+}
+
+// Deposit
+.deposit-container {
+    margin: 0px 140px;
+
+    h2 {
+        @include lounge-hair-studio();
+    }
+
+    h3 {
+        @include intro-after-lounge-hair-studio();
+    }
+}
+
+.royalty-program {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    #empty-space {
+        @include empty-space-100();
+    }
+
+    h2 {
+        font-size: 35px;
+        font-family: Cormorant-Bold;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        // Don't @include this h2 //
+    }
+
+    #info-royalty-program {
+        @include no-margin-left-middle-underline-effect();
+
+    }
+
+    #info-royalty-program:before {
+        @include before-middle-underline-effect();
+    }
+
+    #info-royalty-program:hover:before {
+        @include hover-before-middle-underline-effect();
+    }
+}
+
+.button-adjust {
+    button {
+        height: 39.67px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// Footer
+@mixin width-footer {
+    width: 200px;
+}
+
+@mixin title-footer {
+    font-family: Cormorant-Bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+@mixin ul-footer {
+    list-style: none;
+    padding: 0;
+}
+
+@mixin li-footer {
+    letter-spacing: 2px;
+    font-family: RedHatDisplay;
+}
+
+
+#footer1 {
+    display: grid;
+    grid-template-columns: 260px 200px 200px 200px;
+    grid-template-rows: 250px 30px;
+    justify-content: space-evenly;
+
+    /* address  */
+    #address {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        p {
+            font-family: RedHatDisplay;
+            letter-spacing: 2px;
+        }
+    }
+
+    /* working hours */
+
+    #working-hours {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        ul {
+            @include ul-footer();
+        }
+
+        li {
+            @include li-footer();
+        }
+    }
+
+    /* hair salon */
+
+    #hair-salon {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        ul {
+            @include ul-footer();
+        }
+
+        li {
+            @include li-footer();
+        }
+    }
+
+    /* shop */
+    #shop {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        ul {
+            @include ul-footer();
+        }
+
+        li {
+            @include li-footer();
+        }
+    }
+
+}
+
+/* footer2 */
+#footer2 {
+    height: 150px;
+    background-color: #1c1c1c;
+    color: white;
+    padding-left: 70px;
+
+    img {
+        width: 170px;
+        padding-top: 20px;
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 11px;
+        font-family: RedHatDisplay;
+        letter-spacing: 3px;
+        margin-left: 450px;
+    }
+
+    a:nth-last-child(1) {
+        display: block;
+        margin-top: 30px;
+        text-decoration: none;
+        font-family: Cormorant-Bold;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: white;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+}

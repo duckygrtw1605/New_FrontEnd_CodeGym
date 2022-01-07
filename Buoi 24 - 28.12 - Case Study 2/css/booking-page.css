@@ -1,0 +1,495 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./font/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./font/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(./font/Red_Hat_Display/RedHatDisplay-Light.ttf);
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url(./font/Cormorant/Cormorant-Light.ttf);
+}
+
+@font-face {
+  font-family: Cormorant-Bold;
+  src: url(./font/Cormorant/Cormorant-Medium.ttf);
+}
+
+@font-face {
+  font-family: Cormorant-Bolder;
+  src: url(./font/Cormorant/Cormorant-Bold.ttf);
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url(./font/Archivo/Archivo-Light.ttf);
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#fixed-header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.705);
+  padding-top: 14px;
+}
+
+#fixed-header h2 {
+  color: #c59d5f;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: center;
+  line-height: 7px;
+}
+
+#fixed-header a {
+  color: #c59d5f;
+  text-decoration: underline;
+}
+
+#fixed-header a:hover {
+  color: white;
+}
+
+#second-header {
+  padding-top: 70px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#second-header #logo {
+  width: 151px;
+  height: 53px;
+  padding: 0;
+  margin-left: -20px;
+}
+
+#second-header #choices {
+  margin-top: 8px;
+}
+
+#second-header #choices li {
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 0;
+  padding-right: 35px;
+  font-family: Montserrat-Light;
+  font-size: 14px;
+}
+
+#second-header #choices a {
+  color: black;
+  text-decoration: none;
+}
+
+#second-header #choices a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+#second-header #icons {
+  margin-top: 7px;
+  padding: 0;
+}
+
+#second-header #icons div {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+#second-header #search-word {
+  display: inline-block;
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  padding-right: 30px;
+}
+
+#second-header #search-word a {
+  color: black;
+  text-decoration: none;
+}
+
+#second-header #search-icon img {
+  width: 15px;
+}
+
+#second-header #cart-icon img {
+  width: 20px;
+  margin-right: 35px;
+  margin-bottom: 4px;
+}
+
+#second-header #menu-icon img {
+  width: 18px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.book-now-container {
+  margin: 100px 170px;
+}
+
+.book-now-container h2 {
+  font-family: Cormorant-Bold;
+  font-size: 22px;
+}
+
+.book-now-container h1 {
+  font-family: Cormorant-Bolder;
+  font-weight: 100;
+  font-size: 35px;
+  letter-spacing: -1px;
+  width: 500px;
+}
+
+.book-now-container #fresha-logo {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.book-now-container #app-store-logo {
+  width: 150px;
+  height: 45px;
+}
+
+.book-now-container #google-play-logo {
+  width: 150px;
+  height: 45px;
+  margin-left: 100px;
+}
+
+.book-now-container #book-now-booking {
+  position: relative;
+  color: #333333;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Archivo;
+  font-weight: bold;
+  margin-left: 300px;
+}
+
+.book-now-container #book-now-booking:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid #333333;
+  margin-bottom: -10px;
+}
+
+.book-now-container #book-now-booking:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.guideline-container {
+  margin: 0px 140px;
+}
+
+.guideline-container #empty-space {
+  height: 30px;
+}
+
+.guideline-container .guideline-content {
+  padding: 0px 20px;
+}
+
+.guideline-container .guideline-content h2 {
+  font-family: Cormorant-Bold;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.guideline-container .guideline-photo {
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.guideline-container li {
+  font-family: Archivo;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.booking-engine {
+  text-align: center;
+}
+
+.booking-engine #empty-space {
+  height: 100px;
+}
+
+.booking-engine h2 {
+  font-family: Cormorant-Bold;
+  font-size: 22px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.booking-engine #fresha-help-page {
+  position: relative;
+  color: #333333;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Archivo;
+  font-weight: bold;
+}
+
+.booking-engine #fresha-help-page:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid #333333;
+  margin-bottom: -10px;
+}
+
+.booking-engine #fresha-help-page:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.deposit-container {
+  margin: 0px 140px;
+}
+
+.deposit-container h2 {
+  font-family: Cormorant-Bold;
+  font-size: 22px;
+}
+
+.deposit-container h3 {
+  font-family: Cormorant-Bolder;
+  font-weight: 100;
+  font-size: 35px;
+  letter-spacing: -1px;
+  width: 500px;
+}
+
+.royalty-program {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.royalty-program #empty-space {
+  height: 100px;
+}
+
+.royalty-program h2 {
+  font-size: 35px;
+  font-family: Cormorant-Bold;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.royalty-program #info-royalty-program {
+  position: relative;
+  color: #333333;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Archivo;
+  font-weight: bold;
+}
+
+.royalty-program #info-royalty-program:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid #333333;
+  margin-bottom: -10px;
+}
+
+.royalty-program #info-royalty-program:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.button-adjust button {
+  height: 39.67px;
+}
+
+.button-adjust a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 260px 200px 200px 200px;
+  grid-template-columns: 260px 200px 200px 200px;
+  -ms-grid-rows: 250px 30px;
+  grid-template-rows: 250px 30px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  /* address  */
+  /* working hours */
+  /* hair salon */
+  /* shop */
+}
+
+#footer1 #address {
+  width: 200px;
+}
+
+#footer1 #address h1 {
+  font-family: Cormorant-Bold;
+  font-size: 20px;
+  width: 300px;
+}
+
+#footer1 #address p {
+  font-family: RedHatDisplay;
+  letter-spacing: 2px;
+}
+
+#footer1 #working-hours {
+  width: 200px;
+}
+
+#footer1 #working-hours h1 {
+  font-family: Cormorant-Bold;
+  font-size: 20px;
+  width: 300px;
+}
+
+#footer1 #working-hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer1 #working-hours li {
+  letter-spacing: 2px;
+  font-family: RedHatDisplay;
+}
+
+#footer1 #hair-salon {
+  width: 200px;
+}
+
+#footer1 #hair-salon h1 {
+  font-family: Cormorant-Bold;
+  font-size: 20px;
+  width: 300px;
+}
+
+#footer1 #hair-salon ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer1 #hair-salon li {
+  letter-spacing: 2px;
+  font-family: RedHatDisplay;
+}
+
+#footer1 #shop {
+  width: 200px;
+}
+
+#footer1 #shop h1 {
+  font-family: Cormorant-Bold;
+  font-size: 20px;
+  width: 300px;
+}
+
+#footer1 #shop ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer1 #shop li {
+  letter-spacing: 2px;
+  font-family: RedHatDisplay;
+}
+
+/* footer2 */
+#footer2 {
+  height: 150px;
+  background-color: #1c1c1c;
+  color: white;
+  padding-left: 70px;
+}
+
+#footer2 img {
+  width: 170px;
+  padding-top: 20px;
+}
+
+#footer2 h1 {
+  display: inline-block;
+  font-size: 11px;
+  font-family: RedHatDisplay;
+  letter-spacing: 3px;
+  margin-left: 450px;
+}
+
+#footer2 a:nth-last-child(1) {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  font-family: Cormorant-Bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: white;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=booking-page.css.map */

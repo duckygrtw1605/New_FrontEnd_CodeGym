@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- shop-page css -->
+    <link rel="stylesheet" href="css/shop-page.css">
+    <!-- Bundle JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f84cd3a335.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- booking-page-start-here -->
+
+    <!-- HEADER -->
+    <header>
+        <!-- fixed-header -->
+        <div id="fixed-header">
+            <h2>HOLIDAY SAVINGS</h2>
+            <h2>SAVE UP TO 87% <a href="" target="_blank">MORE INFO</a></h2>
+        </div>
+
+        <!-- second-header -->
+        <div id="second-header">
+            <!-- logo -->
+            <a href="" target="_blank"><img id="logo"
+                    src="C:\CodeGym_Front End\Buoi 24 - 28.12 - Case Study 2\image\chaise-longue.png" alt="logo"></a>
+            <!-- choices -->
+            <div id="choices">
+                <ul>
+                    <li><a href="home-page.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="booking-page.html">BOOKING</a></li>
+                    <li><a href="shop-page.html">SHOP</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">HAIR SOLUTIONS (BLOG)</a></li>
+                </ul>
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <!-- Icons -->
+            <div id="icons">
+                <!-- search -->
+                <div>
+                    <a id="search-icon" href="#"><img
+                            src="C:\CodeGym_Front End\Buoi 24 - 28.12 - Case Study 2\image\loupe.png"
+                            alt="search-icon"></a>
+                    <p id="search-word"><a href="#">SEARCH</a></p>
+
+                </div>
+                <!-- cart -->
+                <a id="cart-icon" href="#"> <img src="C:\CodeGym_Front End\Buoi 24 - 28.12 - Case Study 2\image\bag.png"
+                        alt="cart-icon"></a>
+                <!-- menu (side bar) -->
+                <a id="menu-icon" href=""><img src="C:\CodeGym_Front End\Buoi 24 - 28.12 - Case Study 2\image\menu.png"
+                        alt="menu"></a>
+
+            </div>
+        </div>
+    </header>
+    <!-- End HEADER -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner carousel-photo">
+            <div class="carousel-item active">
+                <img class="d-block"
+                    src="https://loungehairstudio.com/wp-content/uploads/2021/10/suze-ormans-christmas-tips_full_width_3_1200x500_v20201109135421.jpg"
+                    alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="https://loungehairstudio.com/wp-content/uploads/2021/06/keratherapy.jpg"
+                    alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block"
+                    src="https://loungehairstudio.com/wp-content/uploads/2021/10/people-share-the-worst-christmas-gifts-theyve-ever-received_full_width_1_1200x500_v20191120163916.jpg"
+                    alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="https://loungehairstudio.com/wp-content/uploads/2021/06/kevin-murphy.jpg"
+                    alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block"
+                    src="https://loungehairstudio.com/wp-content/uploads/2021/10/heres-why-you-should-stop-buying-christmas-presents_full_width_1_1200x500.jpg"
+                    alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div id="introduction">
+        <h1 id="store-name1">LOUNGE HAIR STUDIO</h1>
+        <div id="the-lounge">
+            <h1>ONLINE STORE</h1>
+        </div>
+    </div>
+
+
+    <!-- Holiday savings section starts here-->
+    <div class="d-inline-flex w-100">
+        <!-- Navbar starts here -->
+        <nav class="nav-container">
+            <div>
+                <p>SEARCH YOUR PRODUCT</p>
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                        placeholder="Product Search...">
+                </div>
+            </div>
+            <div>
+                <h4>LOYALTY REWARDS</h4>
+                <a href="https://loungehairstudio.com/loyalty-rewards/" target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/09/Promo-1-480x600.png"
+                        alt="navbar-photo-1"></a>
+                <h4>REFER A FRIEND</h4>
+                <a href="https://loungehairstudio.com/loyalty-rewards/refer-a-friend/" target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/09/Promo-2-480x600.png"
+                        alt="navbar-photo-2"></a>
+                <h4>PRODUCT BRANDS</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://loungehairstudio.com/product-category/avanti/"
+                            target="_blank">AVANTI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/babyliss/"
+                            target="_blank">BABYLISS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/black-friday/"
+                            target="_blank">BLACK
+                            FRIDAY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/croc/"
+                            target="_blank">CROC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/dannyco/"
+                            target="_blank">DANNYCO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/electric-london/"
+                            target="_blank">ELECTRIC LONDON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/fanola/"
+                            target="_blank">FANOLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/gift-voucers/"
+                            target="_blank">GIFT
+                            VOUCHERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/holiday-savings/"
+                            target="_blank">HOLIDAY SAVINGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/INVISIBOBBLE/"
+                            target="_blank">INVISIBOBBLE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/joico/"
+                            target="_blank">JOICO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/k18/"
+                            target="_blank">K18</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/keratherapy/"
+                            target="_blank">KERATHERAPY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/kevin-murphy/"
+                            target="_blank">KEVIN
+                            MURPHY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/meadowfoam/"
+                            target="_blank">MEADOWFOAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/olaplex/"
+                            target="_blank">OLAPLEX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/oligo/"
+                            target="_blank">OLIGO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/uncategorized/"
+                            target="_blank">UNCATEGORIZED</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/wahl/"
+                            target="_blank">WAHL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://loungehairstudio.com/product-category/wetbrush/"
+                            target="_blank">WETBRUSH</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar ends here -->
+        <!-- Product section starts here -->
+        <div class="holday-savings-container">
+            <div class="d-flex title">
+                <div class="w-75" style="margin-left: 50px; margin-right: 150px">
+                    <h2>LOUNGE HAIR STUDIO</h2>
+                    <h1>HOLIDAY SAVINGS <i></i></h1>
+                </div>
+                <div class="w-25 mt-lg-3 mr-5">
+                    <p style="padding-left: 35px; margin:0;">2021 SPECIALS</p>
+                    <p>UP TO 87% OFF</p>
+                </div>
+            </div>
+
+            <div class="d-flex product-photo">
+                <div class="span-adjust">
+                    <span>SALE</span>
+                </div>
+                <a href="https://loungehairstudio.com/product/joico-weekend-hair-dry-shampoo-53ml/" target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/10/Joico_Weekend_Hair_Dry_Shampoo_53ml_1024x.jpg-300x300.webp"
+                        alt="shampoo-photo-1"></a>
+
+
+                <div class="span-adjust">
+                    <span>SALE</span>
+                </div>
+                <a href="https://loungehairstudio.com/product/meadowfoam-coconut-acai-hand-sanitizer/"
+                    target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/10/meadowfoam_hand_sanitizer_250mL-copy-300x300.jpg"
+                        alt="shampoo-photo-2"></a>
+
+                <div class="span-adjust">
+                    <span>SALE</span>
+                </div>
+                <a href="https://loungehairstudio.com/product/sprunchie-invisibobble/" target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/05/products-Sprunchie-You-Dazzle-Me-300x300.jpg"
+                        alt="shamppoo-photo-3"></a>
+            </div>
+
+            <div class="d-flex product-name">
+                <div>
+                    <a href="https://loungehairstudio.com/product/joico-weekend-hair-dry-shampoo-53ml/"
+                        target="_blank">JOICO WEEKEND
+                        HAIR
+                        DRY SHAMPOO 53ML</a>
+                    <br>
+                    <a class="product-price" id="price-position-adjust"
+                        href="https://loungehairstudio.com/product/joico-weekend-hair-dry-shampoo-53ml/"
+                        target="_blank"><strike>$8.00</strike>
+                        $5.00</a>
+                </div>
+
+                <div>
+                    <a href="https://loungehairstudio.com/product/meadowfoam-coconut-acai-hand-sanitizer/"
+                        target="_blank">JOICO WEEKEND
+                        MEADOWFOAM COCONUT ACAI HAND SANITIZER</a>
+                    <br>
+                    <a class="product-price"
+                        href="https://loungehairstudio.com/product/meadowfoam-coconut-acai-hand-sanitizer/"
+                        target="_blank">$9.99 -
+                        $23.99</a>
+                </div>
+
+                <div>
+                    <a href="https://loungehairstudio.com/product/sprunchie-invisibobble/" target="_blank">JOICO WEEKEND
+                        SPRUNCHIE – INVISIBOBBLE</a>
+                    <br>
+                    <a class="product-price" id="price-position-adjust"
+                        href="https://loungehairstudio.com/product/sprunchie-invisibobble/"
+                        target="_blank"><strike>$13.00</strike>
+                        $5.00</a>
+                </div>
+            </div>
+            <!-- Product section ends here -->
+            <!-- Our brands section starts here -->
+            <div style="height: 150px;"></div>
+            <div class="our-brands-container">
+                <div class="w-75" style="margin-left: 50px; margin-right: 150px">
+                    <h2>LOUNGE HAIR STUDIO</h2>
+                    <h1>OUR BRANDS</h1>
+                </div>
+                <div style="border-bottom: solid 1px grey; opacity: 20%; width: 100%; margin-left: 50px;"></div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex logo-adjust">
+                                <a href="https://loungehairstudio.com/product-category/joico/" target="_blank"><img
+                                        class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/joico-1.jpg"
+                                        alt="First slide"></a>
+                                <a href="https://loungehairstudio.com/product-category/avanti/" target="_blank"><img
+                                        class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/avanti.jpg"
+                                        alt="Second slide"></a>
+                                <a href="https://loungehairstudio.com/product-category/wetbrush/" target="_blank"><img
+                                        class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/wet-brush.jpg"
+                                        alt="Third slide"></a>
+                                <a href="https://loungehairstudio.com/product-category/keratherapy/"
+                                    target="_blank"><img class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/keratherapy-1-e1624548666417.jpg"
+                                        alt="Fourth slide"></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex logo-adjust">
+                                <a href="https://loungehairstudio.com/product-category/wahl" target="_blank"><img
+                                        class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/wahl.jpg"
+                                        alt="First slide"></a>
+                                <a href="https://loungehairstudio.com/product-category/olaplex-2" target="_blank"><img
+                                        class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/olaplex-1.jpg"
+                                        alt="Second slide"></a>
+                                <a href="https://loungehairstudio.com/product-category/kevin-murphy-2"
+                                    target="_blank"><img class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/kevin-myrphy.jpg"
+                                        alt="Third slide"></a>
+                                <a href="https://loungehairstudio.com/product-category/invisii" target="_blank"><img
+                                        class="d-block"
+                                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/invisibobble.jpg"
+                                        alt="Fourth slide"></a>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Our brands section starts here -->
+            <!-- FEATURED PRODUCTS -->
+            <div style="height: 100px;"></div>
+            <div class="d-flex title">
+                <div class="w-75" style="margin-left: 50px; margin-right: 150px">
+                    <h2>LOUNGE HAIR STUDIO</h2>
+                    <h1>FEATURED PRODUCTS</h1>
+                </div>
+                <div class="w-25 mt-lg-3 mr-5">
+                    <p style="margin:0;">STYLIST FAVOURITES</p>
+                    <p style="padding-left: 8px; ">FREE SHIPPING</p>
+                </div>
+            </div>
+
+            <div class="d-flex product-photo">
+                <div>
+                    <span>SALE</span>
+                </div>
+                <a href="https://loungehairstudio.com/product/joico-weekend-hair-dry-shampoo-53ml/" target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/image-2-300x300.png"
+                        alt="shampoo-photo-1"></a>
+
+
+                <div>
+                    <span>SALE</span>
+                </div>
+                <a href="https://loungehairstudio.com/product/meadowfoam-coconut-acai-hand-sanitizer/"
+                    target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/06/K18-leave-in-molecular-repair-hair-mask-300x300.png"
+                        alt="shampoo-photo-2"></a>
+
+                <div>
+                    <span>SALE</span>
+                </div>
+                <a href="https://loungehairstudio.com/product/sprunchie-invisibobble/" target="_blank"><img
+                        src="https://loungehairstudio.com/wp-content/uploads/2021/05/products-Mervin-Model-Image-300x300.jpeg"
+                        alt="shamppoo-photo-3"></a>
+            </div>
+
+            <div class="d-flex product-name">
+                <div>
+                    <a href="https://loungehairstudio.com/product/root-concealer-light-brown/" target="_blank">ROOT
+                        CONCEALER LIGHT
+                        BROWN</a>
+                    <br>
+                    <a class="product-price" href="https://loungehairstudio.com/product/root-concealer-light-brown/"
+                        target="_blank"><strike>$31.00</strike>
+                        $5.00</a>
+                </div>
+
+                <div>
+                    <a href="https://loungehairstudio.com/product/k18-leave-in-molecular-repair-hair-mask/"
+                        target="_blank">K18 <br>
+                        BIOMIMETIC HAIRSCIENCE</a>
+                    <br>
+                    <a class="product-price"
+                        href="https://loungehairstudio.com/product/k18-leave-in-molecular-repair-hair-mask/"
+                        target="_blank">$15.00 -
+                        $89.00</a>
+                </div>
+
+                <div>
+                    <a href="https://loungehairstudio.com/product/15-minute-zoom-consultation/" target="_blank">15
+                        MINUTE VIRTUAL
+                        CONSULTATION</a>
+                    <br>
+                    <a class="product-price" href="https://loungehairstudio.com/product/15-minute-zoom-consultation/"
+                        target="_blank">
+                        $25.00</a>
+                </div>
+            </div>
+            <div style="height: 90px;"></div>
+            <a id="more-featured-products-adjust" href="https://loungehairstudio.com/online-store/featured-products/"
+                target="_blank">MORE FEATURED PRODUCTS</a>
+            <!-- FEATURED PRODUCTS ends here-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="height: 150px;"></div>
+    <footer id="footer1">
+        <div id="address">
+            <h1>THE LOUNGE HAIR STUDIO</h1>
+
+            <p>1116 Richards St, Vancouver, BC V6B 3E6</p>
+            <p>info@loungehairstudio.com</p>
+            <p>(604) 602 7688</p>
+        </div>
+        <div id="working-hours">
+            <h1>WORKING HOURS</h1>
+            <ul>
+                <li><b>Mon | Fri</b> — 9 am 9 pm</li>
+                <li><b>Sat</b> — 9 am 5 pm</li>
+                <li><b>Sun</b> — Closed</li>
+            </ul>
+        </div>
+        <div id="hair-salon">
+            <h1>HAIR SALON</h1>
+            <ul>
+                <li>Book online</li>
+                <li>Blog</li>
+                <li>Team</li>
+                <li>Lounge careers</li>
+                <li>Loyalty rewards</li>
+                <li>Covid -19 protocols</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+        <div id="shop">
+            <h1>SHOP</h1>
+            <ul>
+                <li>My account</li>
+                <li>Products</li>
+                <li>Shipping FAQ</li>
+                <li>Returns & exchanges</li>
+                <li>Payment & security</li>
+            </ul>
+        </div>
+    </footer>
+
+    <footer id="footer2">
+        <a href="" target="_blank"><img
+                src="https://loungehairstudio.com/wp-content/uploads/2018/07/Mobile-lounge-hair-studio-vancouver-logo-white-300x96.png"
+                alt="white-logo"></a>
+        <h1>COPYRIGHT 2021 LOUNGE HAIR STUDIO. ALL RIGHTS RESERVED</h1>
+        <a href="" target="_blank">STAFF ONLY</a>
+    </footer>
+    <!-- Footer end here -->
+
+</body>
+
+</html>

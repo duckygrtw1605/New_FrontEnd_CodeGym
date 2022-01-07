@@ -1,0 +1,576 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./font/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay;
+    src: url(./font/Red_Hat_Display/RedHatDisplay-Light.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay-Bold;
+    src: url(./font/Red_Hat_Display/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url(./font/Cormorant/Cormorant-Light.ttf);
+}
+
+@font-face {
+    font-family: Cormorant-Bold;
+    src: url(./font/Cormorant/Cormorant-Medium.ttf);
+}
+
+@font-face {
+    font-family: Cormorant-Bolder;
+    src: url(./font/Cormorant/Cormorant-Bold.ttf);
+}
+
+@font-face {
+    font-family: Archivo;
+    src: url(./font/Archivo/Archivo-Light.ttf);
+}
+
+@font-face {
+    font-family: Archivo-Bold;
+    src: url(./font/Archivo/Archivo-Bold.ttf);
+}
+
+$text-color: #333333;
+
+@mixin lounge-hair-studio-text {
+    font-family: RedHatDisplay;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@mixin title-text {
+    font-family: Cormorant-Bolder;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+
+@mixin middle-underline-effect {
+    position: relative;
+    color: $text-color;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Archivo;
+    font-weight: bold;
+    margin-left: 300px;
+    width: fit-content;
+}
+
+@mixin before-middle-underline-effect {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid $text-color;
+    margin-bottom: -10px;
+}
+
+@mixin hover-before-middle-underline-effect {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+html,
+body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+// Headers
+#fixed-header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.705);
+    padding-top: 14px;
+
+    h2 {
+        color: #c59d5f;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-align: center;
+        line-height: 7px;
+
+    }
+
+
+    a {
+        color: #c59d5f;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+}
+
+#second-header {
+    padding-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    #logo {
+        width: 151px;
+        height: 53px;
+        padding: 0;
+        margin-left: -20px;
+    }
+
+    #choices {
+        margin-top: 8px;
+
+        li {
+            display: inline-block;
+            padding-top: 5px;
+            padding-left: 0;
+            padding-right: 35px;
+            font-family: Montserrat-Light;
+            font-size: 14px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+    }
+
+    #icons {
+        margin-top: 7px;
+        padding: 0;
+
+        div {
+            display: inline-block;
+            margin-top: 4px;
+        }
+
+    }
+
+    #search-word {
+        display: inline-block;
+        font-family: Montserrat-Light;
+        font-size: 14px;
+        padding-right: 30px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+    }
+
+    #search-icon {
+        img {
+            width: 15px;
+        }
+    }
+
+    #cart-icon {
+        img {
+            width: 20px;
+            margin-right: 35px;
+            margin-bottom: 4px;
+
+        }
+    }
+
+    #menu-icon {
+        img {
+            width: 18px;
+            margin-bottom: 2px;
+            margin-right: 5px;
+
+        }
+    }
+}
+
+// End header
+
+// Carousel
+.carousel {
+    padding: 40px 0px;
+    margin: auto;
+    width: 95%;
+}
+
+.carousel-photo {
+    height: 450px;
+}
+
+.carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#introduction {
+    position: absolute;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 100px;
+    padding-left: 30px;
+    z-index: 1;
+}
+
+#store-name1 {
+    font-family: RedHatDisplay;
+    letter-spacing: 4px;
+    font-size: 16px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#the-lounge h1 {
+    font-family: Cormorant;
+    font-size: 45px;
+}
+
+// End carousel
+
+// Holday savings starts here
+// Navbar
+.nav-container {
+    width: 20%;
+    display: inline-block;
+    margin-left: 80px;
+
+    .input-group {
+        border: solid 1px black;
+        margin-bottom: 70px;
+    }
+
+    input:focus::placeholder {
+        color: transparent;
+        transition: ease-in 0.7s;
+    }
+
+    img {
+        width: 240px;
+        margin-bottom: 40px;
+    }
+
+    .nav-link {
+        padding-left: 0;
+        color: black;
+        font-size: 13px;
+        font-family: Archivo;
+        letter-spacing: 2px;
+
+    }
+
+    h4 {
+        font-size: 20px;
+        font-family: Archivo-Bold;
+        letter-spacing: 1px;
+    }
+
+}
+
+// End Nav bar
+
+// Products
+.holday-savings-container {
+    width: 80%;
+    padding-right: 50px;
+
+    h2 {
+        @include lounge-hair-studio-text();
+    }
+
+    h1 {
+        @include title-text();
+    }
+
+    p:nth-last-child(1) {
+        font-size: 14px;
+        font-family: RedHatDisplay-Bold;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    p:nth-last-child(2) {
+        font-size: 12px;
+        font-family: RedHatDisplay;
+        color: rgb(88, 87, 87);
+        letter-spacing: 2px;
+
+    }
+
+    .product-photo {
+        margin-top: 60px;
+        margin-right: 80px;
+        justify-content: space-around;
+
+        img {
+            width: 252.5px;
+        }
+
+        :hover img {
+            -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+        }
+
+        // SALE TAG
+        div {
+            position: relative;
+            z-index: 2;
+            left: 50px;
+            top: 25px;
+            background-color: rgb(233, 187, 71);
+            color: white;
+            font-size: 12px;
+            height: 30px;
+            width: 60px;
+            padding-top: 6px;
+            padding-left: 3px;
+            text-align: center;
+            font-family: Archivo;
+            font-weight: bolder;
+            letter-spacing: 4px;
+
+        }
+    }
+
+    .product-name {
+        justify-content: space-around;
+        margin-top: 30px;
+
+        div {
+            width: 253px;
+            text-align: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-family: Archivo;
+            color: black;
+        }
+
+        .product-price {
+            position: relative;
+            top: 15px;
+            font-weight: bold;
+        }
+
+        #price-position-adjust {
+            top: 40px;
+        }
+
+        .product-price:before {
+            content: "Add to Cart";
+            position: absolute;
+            width: 150px;
+            height: 25px;
+            bottom: 0;
+            left: -30px;
+            color: white;
+            font-weight: bold;
+            font-family: Archivo;
+            background-color: $text-color;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .product-price:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+
+    }
+
+    // End Products
+
+    // Our brands starts here
+    .logo-adjust {
+        width: 95%;
+        margin-left: 15px;
+        justify-content: space-around;
+    }
+
+    .carousel-control-prev {
+        width: 50px;
+    }
+
+    #more-featured-products-adjust {
+        @include middle-underline-effect();
+    }
+
+    #more-featured-products-adjust:before {
+        @include before-middle-underline-effect();
+    }
+
+    #more-featured-products-adjust:hover:before {
+        @include hover-before-middle-underline-effect();
+    }
+
+}
+
+// Holiday savings ends here
+
+// Footer starts here
+@mixin width-footer {
+    width: 200px;
+}
+
+@mixin title-footer {
+    font-family: Cormorant-Bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+@mixin ul-footer {
+    list-style: none;
+    padding: 0;
+}
+
+@mixin li-footer {
+    letter-spacing: 2px;
+    font-family: RedHatDisplay;
+}
+
+
+#footer1 {
+    display: grid;
+    grid-template-columns: 260px 200px 200px 200px;
+    grid-template-rows: 250px 30px;
+    justify-content: space-evenly;
+
+    /* address  */
+    #address {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        p {
+            font-family: RedHatDisplay;
+            letter-spacing: 2px;
+        }
+    }
+
+    /* working hours */
+
+    #working-hours {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        ul {
+            @include ul-footer();
+        }
+
+        li {
+            @include li-footer();
+        }
+    }
+
+    /* hair salon */
+
+    #hair-salon {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        ul {
+            @include ul-footer();
+        }
+
+        li {
+            @include li-footer();
+        }
+    }
+
+    /* shop */
+    #shop {
+        width: 200px;
+
+        h1 {
+            @include title-footer();
+        }
+
+        ul {
+            @include ul-footer();
+        }
+
+        li {
+            @include li-footer();
+        }
+    }
+
+}
+
+/* footer2 */
+#footer2 {
+    height: 150px;
+    background-color: #1c1c1c;
+    color: white;
+    padding-left: 70px;
+
+    img {
+        width: 170px;
+        padding-top: 20px;
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 11px;
+        font-family: RedHatDisplay;
+        letter-spacing: 3px;
+        margin-left: 450px;
+    }
+
+    a:nth-last-child(1) {
+        display: block;
+        margin-top: 30px;
+        text-decoration: none;
+        font-family: Cormorant-Bold;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: white;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+}
+
+// Footer ends here
